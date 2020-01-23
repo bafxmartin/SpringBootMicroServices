@@ -40,7 +40,7 @@ public class PlantPlacesController {
 	@RequestMapping(value="/start", method=RequestMethod.GET, params= {"loyalty=silver"})
 	public ModelAndView readSilver() {
 		SpecimenDTO specimenDTO = specimenServiceStub.fetchById(43);
-		specimenDTO.setSpecimenID(83);
+		specimenDTO.setSpecimenId(83);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.setViewName("start");
 		modelAndView.addObject("specimenDTO", specimenDTO);
