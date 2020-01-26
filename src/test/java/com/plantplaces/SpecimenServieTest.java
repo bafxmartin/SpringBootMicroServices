@@ -34,7 +34,7 @@ public class SpecimenServieTest {
 	
 	@Before
 	public void setup() throws Exception {
-		SpecimenDTO specimen = new SpecimenDTO();
+		specimen = new SpecimenDTO();
 		specimen.setDescription("A beautiful Redbud I planted myself");
 		specimen.setSpecimenId(83);
 		Mockito.when(specimenDAO.save(specimen)).thenReturn(true);
