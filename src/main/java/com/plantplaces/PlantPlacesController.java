@@ -1,5 +1,7 @@
 package com.plantplaces;
 
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -80,6 +82,18 @@ public class PlantPlacesController {
 		return "start";
 	}
 	
-	
+	@RequestMapping("/searchPlants")
+	public String searchPlants(@RequestParam(value="searchTerm", required=false, defaultValue="") String  searchTerm) {
+		String enhancedTerm = searchTerm + " ";
+		return "start";
+	}
+		
+	@RequestMapping("/searchPlantsAll")
+	public String searchPlantsAll(@RequestParam Map<String,String> requestParams) {
+		int params = requestParams.size();
+		requestParams.get("searchTerm");
+		return "start";
+			
+	}
 }
 

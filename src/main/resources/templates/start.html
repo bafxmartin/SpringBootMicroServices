@@ -5,7 +5,11 @@
 <title>Plant Places.com Virtual Arboretum</title>
 </head>
 <body>
-Welcome to Plant Places
+<form action="#" th:action="@{/searchPlants}" method="GET">
+Welcome to Plant Places!
+    <input type="text" name="searchTerm"/>
+    <button name="submit" type="submit" value="0">Search</button>
+</form>
 <br/>
 Your Specimen is: <p th:text="${specimenDTO}"/>
 
@@ -15,7 +19,7 @@ Your Specimen is: <p th:text="${specimenDTO}"/>
  Description: <input type="text" name="description" th:field="*{description}"/><br/>
  Plant: <input type="text" name="plantId" th:field="*{plantId}"/><br/>
 
-<button> <name="submit" type="submit" value="0"> Submit</button>
+<button> <name="submit" type="submit" value="0">Submit</button>
 </form>
 
 </body>

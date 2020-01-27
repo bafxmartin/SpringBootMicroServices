@@ -30,6 +30,13 @@ build/
 ### VS Code ###
 .vscode/
 
+# Brian Martin
+# 26-Jan-2020
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/MavenWrapperDownloader.java
+mvnw
+mvnw.cmd
 
 # Created by https://www.gitignore.io/api/eclipse
 # Edit at https://www.gitignore.io/?templates=eclipse
