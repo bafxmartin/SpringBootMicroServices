@@ -96,7 +96,11 @@ public class PlantPlacesController {
 		int params = requestParams.size();
 		requestParams.get("searchTerm");
 		return "start";
-			
+	}
+	
+    @RequestMapping("/sustainability")
+	public String sustainability() {
+		return "sustainability";
 	}
 }
 
