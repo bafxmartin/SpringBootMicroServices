@@ -51,7 +51,12 @@ public class SpecimenServieTest {
 
 	
 	private void whenUserSearchesForEasternRedbud() {
-		plants = specimenService.fetchPlants("Eastern Redbud");
+		try {
+			plants = specimenService.fetchPlants("Eastern Redbud");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 
@@ -92,7 +97,12 @@ public class SpecimenServieTest {
 	}
 
 	private void whenTheUserSearchForCercis() {
-		plants = specimenService.fetchPlants("Cercis");		
+		try {
+			plants = specimenService.fetchPlants("Cercis");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
 	}
 
 	private void thenMyPlantDiaryReturnsEasternRedbud() {
@@ -112,7 +122,12 @@ public class SpecimenServieTest {
 	}
 
 	private void whenTheUserSearcgForJunk() {
-		plants = specimenService.fetchPlants("kajsd;luaopuidfjo;aj;sd");
+		try {
+			plants = specimenService.fetchPlants("kajsd;luaopuidfjo;aj;sd");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 	}
