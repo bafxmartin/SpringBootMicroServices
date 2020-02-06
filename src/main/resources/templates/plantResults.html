@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Plant Places.com Virtual Arboretum</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div th:replace="fragments/topnav :: navbar">
+</div>
+
+<br/>
+<div class="List-group" th:each="plant : ${plants}">
+    <a th:href="@{http://plantplaces.com/perl/viewplantdetails.pl(plant_ID=${plant.guid})}" class="List-group-item List-group-item-action">
+        <p th:text="${plant}"/>
+    </a>
+</div>
+
+</body>
+</html>

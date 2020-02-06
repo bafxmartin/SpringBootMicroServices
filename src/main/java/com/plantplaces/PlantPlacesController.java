@@ -97,7 +97,7 @@ public class PlantPlacesController {
 			e.printStackTrace();
 			modelAndView.setViewName("error");
 		}
-		modelAndView.addObject(plants);
+		modelAndView.addObject("plants", plants);
 		return modelAndView;
 	}
 		
