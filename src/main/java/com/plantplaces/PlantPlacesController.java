@@ -18,9 +18,14 @@ import com.plantplaces.dto.PlantDTO;
 import com.plantplaces.dto.SpecimenDTO;
 import com.plantplaces.service.ISpecimenService;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Controller
 public class PlantPlacesController {
 
+	Logger log = LoggerFactory.getLogger(this.getClass());
+	
 	@Autowired
 	private ISpecimenService specimenService;
 	
@@ -60,6 +65,7 @@ public class PlantPlacesController {
 	
 	@RequestMapping(value="/start", method=RequestMethod.GET)
 	public String read(Model model) {
+		log.info("User has entered the /Start endpoint");
 		model.addAttribute("specimenDTO", new SpecimenDTO());
 		return "start";
 	}
@@ -87,17 +93,22 @@ public class PlantPlacesController {
 	
 	@RequestMapping("/searchPlants")
 	public ModelAndView searchPlants(@RequestParam(value="searchTerm", required=false, defaultValue="") String  searchTerm) {
+		log.debug("entering search plants");
 		ModelAndView modelAndView = new ModelAndView();
 		List<PlantDTO> plants = new ArrayList<PlantDTO>();
 		try {
 			plants = specimenService.fetchPlants(searchTerm);
 			modelAndView.setViewName("plantResults");
+			if (plants.size()== 0) {
+				log.warn("Received 0 result for search string: " + searchTerm);
+			}
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
+			log.error("Error happened in searchPlants endpoint", e);
 			e.printStackTrace();
 			modelAndView.setViewName("error");
 		}
 		modelAndView.addObject("plants", plants);
+		log.debug("exiting searcg Plants");
 		return modelAndView;
 	}
 		
