@@ -7,6 +7,7 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -99,8 +100,8 @@ public class PlantPlacesController {
 		try {
 			plants = specimenService.fetchPlants(searchTerm);
 			modelAndView.setViewName("plantResults");
-			if (plants.size()== 0) {
-				log.warn("Received 0 result for search string: " + searchTerm);
+			if (plants.size() == 0 ) {
+				log.warn("Received 0 results for search string: " + searchTerm);
 			}
 		} catch (Exception e) {
 			log.error("Error happened in searchPlants endpoint", e);
@@ -108,7 +109,7 @@ public class PlantPlacesController {
 			modelAndView.setViewName("error");
 		}
 		modelAndView.addObject("plants", plants);
-		log.debug("exiting searcg Plants");
+		log.debug("exiting search Plants");
 		return modelAndView;
 	}
 		

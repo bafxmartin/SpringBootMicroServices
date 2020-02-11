@@ -19,16 +19,15 @@ import retrofit2.Retrofit;
 public class PlantDAO implements IPlantDAO {
 	@Autowired
 	NetworkDAO networkDAO;
-	private List<PlantDTO> plants;
 	
 	/* (non-Javadoc)
-	 * @see com.plantplaces.dao.IPlantDAO#Fecth(java.lang.String)
+	 * @see com.plantplaces.dao.IPlantDAO#fecth(java.lang.String)
 	 */
 
 	public List<PlantDTO> fetchManual(String searchFilter) throws Exception {
 		List<PlantDTO> allPlants = new ArrayList<PlantDTO>();
 		
-		String rawJson = networkDAO.request("http://www.plantplaces.com/perl/mobile/viewplantsjson.pl?Combined_Name=Oak");
+		String rawJson = networkDAO.request("http://plantplaces.com/perl/mobile/viewplantsjson.pl?Combined_Name=Oak");
 		
 		JSONObject root = new JSONObject(rawJson);
 		
@@ -63,12 +62,12 @@ public class PlantDAO implements IPlantDAO {
 	@Override
 	public List<PlantDTO> fetch(String searchFilter) throws Exception {
 		Retrofit retrofit = new Retrofit.Builder()
-				.baseUrl("http://www.plantplaces.com")
+				.baseUrl("http://plantplaces.com")
 				.addConverterFactory(GsonConverterFactory.create())
 				.build();
 		GetPlants getPlants = retrofit.create(GetPlants.class);
 		
-		Call<PlantList> allPlants = getPlants.getAllPtants(searchFilter);
+		Call<PlantList> allPlants = getPlants.getAllPlants(searchFilter);
 		Response<PlantList> execute = allPlants.execute();
 		PlantList plantList = execute.body();
 		

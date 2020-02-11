@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeLeaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1"/>
 <title>Plant Places.com Virtual Arboretum</title>
@@ -12,8 +12,8 @@
 </div>
 
 <br/>
-<div class="List-group" th:each="plant : ${plants}">
-    <a th:href="@{http://plantplaces.com/perl/viewplantdetails.pl(plant_ID=${plant.guid})}" class="List-group-item List-group-item-action">
+<div class="list-group" th:each="plant : ${plants}">
+	<a th:href="@{http://plantplaces.com/perl/viewplantdetails.pl(plant_ID=${plant.guid})}" class="list-group-item list-group-item-action">
         <p th:text="${plant}"/>
     </a>
 </div>
