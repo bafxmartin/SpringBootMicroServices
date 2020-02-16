@@ -41,4 +41,7 @@ public interface ISpecimenService {
 
 	ISpecimenDAO getSpecimenDAO();
 
+
+	Iterable<SpecimenDTO> fetchAllSpecimens() throws Exception;
+
 }

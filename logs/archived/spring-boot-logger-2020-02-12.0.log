@@ -1,0 +1,33 @@
+2020-02-12 21:41:23,473 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 14552 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:41:23,485 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:41:23,517 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:45:03,598 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 14472 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:45:03,604 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:45:03,610 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:46:54,316 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 3464 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:46:54,325 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:46:54,335 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:48:47,304 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 15348 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:48:47,310 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:48:47,327 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:50:21,910 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 10852 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:50:21,916 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:50:21,921 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:52:05,699 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 1004 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:52:05,705 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:52:05,721 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 21:56:45,341 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 10552 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 21:56:45,345 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 21:56:45,353 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 22:03:13,767 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 17544 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 22:03:13,776 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 22:03:13,802 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 22:18:19,719 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 13812 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 22:18:19,736 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 22:18:19,740 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 22:20:33,852 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 18352 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 22:20:33,861 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 22:20:33,865 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-12 22:26:03,698 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 13768 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-12 22:26:03,742 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-12 22:26:03,750 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default

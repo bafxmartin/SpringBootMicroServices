@@ -8,4 +8,6 @@ public interface ISpecimenDAO {
 	 * 
 	 */
 	boolean save(SpecimenDTO specimenDTO) throws Exception;
+
+	Iterable<SpecimenDTO> fetchAll() throws Exception;
 }

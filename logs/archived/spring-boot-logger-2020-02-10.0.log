@@ -1,0 +1,7 @@
+2020-02-10 22:47:13,733 INFO org.springframework.boot.StartupInfoLogger [main] Starting PlantplacesApplication on DESKTOP-L6E2RDE with PID 32280 (C:\WS\plantplaces\target\classes started by Brian in C:\WS\plantplaces)
+2020-02-10 22:47:13,736 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2020-02-10 22:47:13,739 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2020-02-10 22:47:51,524 INFO org.springframework.boot.StartupInfoLogger [main] Started PlantplacesApplication in 43.158 seconds (JVM running for 44.989)
+2020-02-10 22:47:53,189 INFO com.plantplaces.PlantPlacesController [http-nio-8080-exec-1] User has entered the /Start endpoint
+2020-02-10 22:48:39,192 DEBUG com.plantplaces.PlantPlacesController [http-nio-8080-exec-3] entering search plants
+2020-02-10 22:48:57,454 DEBUG com.plantplaces.PlantPlacesController [http-nio-8080-exec-3] exiting search Plants

@@ -32,6 +32,14 @@ public class PlantPlacesController {
 	
 	@RequestMapping(value="/savespecimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
+		try {
+			specimenService.save(specimenDTO);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			log.error("unable to save specimen", e);
+			e.printStackTrace();
+			return "error";
+		}
 		specimenDTO.setPlantId(13);
 		return "start";
 	}
@@ -124,5 +132,24 @@ public class PlantPlacesController {
 	public String sustainability() {
 		return "sustainability";
 	}
+    
+    @RequestMapping("/showSpecimens")
+    public ModelAndView showSpecimens() {
+    	ModelAndView modelAndView = new ModelAndView("showSpecimens");
+
+    	try {
+    		Iterable<SpecimenDTO> allSpecimens = specimenService.fetchAllSpecimens();
+			specimenService.fetchAllSpecimens();
+			modelAndView.addObject("allSpecimens", allSpecimens);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			log.error("unable to retrieve specimens", e);
+			modelAndView.setViewName("error");
+		}
+		return modelAndView;
+    	
+    }
+    
 }
 
