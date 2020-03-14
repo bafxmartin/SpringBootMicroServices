@@ -29,6 +29,10 @@ public class PlantPlacesController {
 	
 	@Autowired
 	private ISpecimenService specimenService;
+
+	private List<PlantDTO> allPlants;
+
+	private String firstThreeCharacters;
 	
 	@RequestMapping(value="/savespecimen")
 	public String saveSpecimen(SpecimenDTO specimenDTO) {
@@ -151,5 +155,30 @@ public class PlantPlacesController {
     	
     }
     
+	@RequestMapping(value="/plantNamesAutocomplete")
+	@ResponseBody
+	public List<String> plantNamesAutocomplete(@RequestParam(value="term", required = false, defaultValue="") String term)  {
+		List<String> suggestions = new ArrayList<String>();
+		try {
+			// only update when term is three characters.
+			if (term.length() == 3) {
+				firstThreeCharacters = term;
+				allPlants = specimenService.fetchPlants(term);
+			}
+
+			for (PlantDTO plantDTO : allPlants) {
+				if (plantDTO.toString().contains(term)) {
+					suggestions.add(plantDTO.toString());
+				}
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			log.error("Exception in autocomplete", e);
+		}
+
+		return suggestions;
+
+	}    
 }
 
